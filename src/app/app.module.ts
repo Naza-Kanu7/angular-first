@@ -11,14 +11,20 @@ import { ButtonComponent } from './pages/button/button.component';
 import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
+import { PasswordModule } from 'primeng/password';
+import { InputTextModule } from 'primeng/inputtext';
 import { SplitButtonModule } from 'primeng/splitbutton';
+import { LoginComponent } from './login/login.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     CalendarComponent,
-    ButtonComponent
+    ButtonComponent,
+    LoginComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +32,8 @@ import { SplitButtonModule } from 'primeng/splitbutton';
     ButtonModule,
     CalendarModule,
     FormsModule,
+    PasswordModule,
+    InputTextModule,
     SplitButtonModule,
     AppRoutingModule
   ],
